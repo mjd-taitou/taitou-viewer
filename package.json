@@ -1,0 +1,28 @@
+{
+  "name": "cesiumviewer_mjd_taitou",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "private": "true",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack serve --config webpack.config.js",
+    "start:built": "npx http-server -a localhost -p 8080 dist/",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "cesium": "^1.127.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.1.0",
+    "css-loader": "^6.8.1",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.6.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
